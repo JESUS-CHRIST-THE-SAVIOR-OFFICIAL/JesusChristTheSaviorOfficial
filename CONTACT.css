@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: yellowgreen;
+}
+.contact,
+.main
+{
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(./images/bannerjcs1.jpg);
+    background-size: cover;
+    animation: change 15s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(images/img1.jpg);
+    }
+    20%
+    {
+        background-image: url(images/img2.jpg);
+    }
+    40%
+    {
+        background-image: url(images/bannerjcs1.jpg);
+    }
+    60%
+    {
+        background-image: url(images/img4.jpg);
+    }
+    80%
+    {
+        background-image: url(images/img5.jpg);
+    }
+    100%
+    {
+        background-image: url(images/bannerjcs2.jpg);
+    }
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: green;
+}
+.contact .content p
+{
+    font-weight: 300;
+    color: yellowgreen;
+    font-weight: bold;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: yellowgreen;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: green;
+    flex-direction: column;
+    font-weight: 300;
+    font-weight: bold;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: green;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: yellowgreen;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: green;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border-bottom: 2px solid yellowgreen;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: green;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: green;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: green;
+    color: yellowgreen;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.logo {
+    color: yellowgreen;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.logo1{
+    width: 10.0rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: center;
+    margin-left: 10px;
+    background: green;
+}
+.menu{
+    width: 450px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: green;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: yellowgreen;
+
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: yellowgreen;
+    border: 2px solid yellowgreen;
+    margin-top: 13px;
+    color: green;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: whitesmoke;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+    
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid yellowgreen;
+    margin-top: 13px;
+    color: green;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+::placeholder{
+    color: green;
+    font-family: Arial;
+}
